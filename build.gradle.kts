@@ -34,7 +34,10 @@ publishing {
         maven {
             name = "somniumRepositorySomniumcraft"
             url = uri("https://repo.scmc.dev/somniumcraft")
-            credentials(PasswordCredentials::class)
+            credentials {
+                username = System.getenv("MAVEN_NAME")
+                password = System.getenv("MAVEN_SECRET")
+            }
             authentication {
                 create<BasicAuthentication>("basic")
             }

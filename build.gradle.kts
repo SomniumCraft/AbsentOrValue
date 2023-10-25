@@ -47,7 +47,7 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "dev.scmc"
             artifactId = "absentorvalue"
-            version = "1.0.0"
+            version = "1.0.1"
             from(components["java"])
         }
     }

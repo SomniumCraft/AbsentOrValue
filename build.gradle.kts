@@ -45,9 +45,9 @@ publishing {
     }
     publications {
         create<MavenPublication>("maven") {
-            groupId = "dev.scmc"
+            groupId = project.group.toString()
             artifactId = "absentorvalue"
-            version = "1.0.1"
+            version = project.version.toString()
             from(components["java"])
         }
     }

@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "dev.scmc"
-version = "1.0.2"
+version = "1.0.3"
 
 repositories {
     mavenCentral()
@@ -73,14 +73,6 @@ publishing {
             authentication {
                 create<BasicAuthentication>("basic")
             }
-        }
-    }
-    publications {
-        create<MavenPublication>("maven") {
-            groupId = project.group.toString()
-            artifactId = "absentorvalue"
-            version = project.version.toString()
-            from(components["java"])
         }
     }
 }

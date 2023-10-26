@@ -1,4 +1,4 @@
-package dev.scmc
+package dev.scmc.absentorvalue
 
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.Serializable
